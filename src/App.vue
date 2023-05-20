@@ -1,4 +1,5 @@
 <script>
+import SiteHeader from './components/SiteHeader.vue'
 export default {
   data() {
     return {
@@ -10,16 +11,21 @@ export default {
 
 <template>
 <div class="my-container debug">
-  <header>
-    <div class="header_container"></div>
-  </header>
+  <SiteHeader />
+
   
   <main>
     <div class="main_content">
       <div class="content_container">--&gt; Content goes here &lt;--</div>
     </div>
     <div class="shop">
-      <div class="shop_container"></div>
+      <div class="shop_container">
+        <div class="shop_option"></div>
+        <div class="shop_option"></div>
+        <div class="shop_option"></div>
+        <div class="shop_option"></div>
+        <div class="shop_option"></div>
+      </div>    
     </div>
   </main>
   
@@ -48,6 +54,15 @@ export default {
 .debug header {
   height: 80px;
   background-color: red;
+}
+
+.debug .shop {
+  height: 120px;
+  .shop_option {
+    width: calc(100% / 5);
+    background-color: yellow;
+    border: 1px dashed black;
+  }
 }
 
 .debug .footer_top {

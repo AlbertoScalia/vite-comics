@@ -1,6 +1,11 @@
 <script>
+import MainShop from './MainShop.vue';
+
 export default {
-    name: 'SiteMain'
+  name: "SiteMain",
+  components: {
+    MainShop
+  }
 }
 </script>
 
@@ -8,9 +13,10 @@ export default {
     <div class="main_content">
       <div class="content_container">--&gt; Content goes here &lt;--</div>
     </div>
-    <SiteShop />
+    <MainShop />
 </template>
 
 
 <style lang="scss" scoped>
+
 </style>

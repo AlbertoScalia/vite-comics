@@ -1,9 +1,12 @@
 <script>
 import SiteHeader from './components/SiteHeader.vue'
+import SiteMain from './components/SiteMain.vue';
+import SiteFooter from './components/SiteFooter.vue';
 export default {
   components: {
     SiteHeader,
-    SiteMain
+    SiteMain,
+    SiteFooter
   },
   data() {
     return {
@@ -13,69 +16,10 @@ export default {
 </script>
 
 <template>
-<div class="my-container debug">
   <SiteHeader />
-
-  
   <SiteMain />
-
-  
-  <footer>
-    <div class="footer_top">
-      <div class="top_container">
-        <div class="my_col"></div>
-        <div class="my_col"></div>
-        <div class="my_col"></div>
-      </div>
-    </div>
-    
-    <div class="footer_bottom">
-      <div class="bottom_container">
-        <div class="bottom_left"></div>
-        <div class="bottom_right">
-
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
+  <SiteFooter />
 </template>
 
 <style lang="scss" scoped>
-
-.debug .shop {
-  height: 130px;
-  .shop_option {
-    width: calc(100% / 5);
-    background-color: yellow;
-    border: 1px dashed black;
-  }
-}
-
-.debug .footer_top {
-  height: 280px;
-  background-color: grey;
-    .my_col {
-      height: 100%;
-      background-color: red;
-      border: 1px dashed;
-      width: calc(100% / 10);
-    }
-}
-
-.debug .footer_bottom {
-  .bottom_container {
-    justify-content: space-between;
-  }
-  height: 80px;
-  background-color: /* dark */ darkblue;
-  .bottom_left {
-    width: calc(100% / 9);
-    border: 1px dashed yellow;
-  }
-  .bottom_right {
-    width: calc(100% / 3);
-    border: 1px dashed yellow;
-  }
-}
 </style>

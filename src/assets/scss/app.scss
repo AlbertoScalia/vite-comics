@@ -1,8 +1,10 @@
 @use './partials/_common' as *;
+@use './partials/header' as *;
+
 
 .main_content {
     height: 100px;
-    background-color: $dark;
+    background-color: $secondary;
     color: $lighter;
 }
 

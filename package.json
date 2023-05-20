@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/roboto-condensed": "^4.5.9",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "vue": "^3.2.47"

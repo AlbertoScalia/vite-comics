@@ -1,0 +1,27 @@
+@use './common' as *;
+
+.header_container {
+    justify-content: space-between;
+    background-color: $lighter;
+}
+
+.logo {
+    padding: 0.5rem 0;
+    img {
+      height: 70px;
+    }
+  }
+  li {
+    font-size: 0.7rem;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    padding: 0 0.6rem;
+    &.active {
+    border-bottom: 2px solid $primary;
+    a {
+      color: $primary;
+      margin-bottom: -2px;
+    }
+  }
+  }

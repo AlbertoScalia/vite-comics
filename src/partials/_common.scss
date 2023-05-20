@@ -4,10 +4,13 @@ $dark: #303030;
 $lighter: #fff;
 $socials: #797979;
 
+body {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
 [class$='_container'] {
     width: 65%;
     height: 100%;
     margin: 0 auto;
-    border: 1px dashed white;
     display: flex;
 }

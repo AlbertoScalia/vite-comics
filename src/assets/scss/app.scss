@@ -1,0 +1,12 @@
+@use './partials/_common' as *;
+
+.main_content {
+    height: 100px;
+    background-color: $dark;
+    color: $lighter;
+}
+
+.shop {
+    height: 120px;
+    background-color: $primary;
+}

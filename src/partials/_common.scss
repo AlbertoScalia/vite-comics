@@ -1,0 +1,13 @@
+$primary: #0282f9;
+$secondary: #1c1c1c;
+$dark: #303030;
+$lighter: #fff;
+$socials: #797979;
+
+[class$='_container'] {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px dashed white;
+    display: flex;
+}

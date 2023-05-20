@@ -1,13 +1,4 @@
 @use './partials/_common' as *;
 @use './partials/header' as *;
-
-
-.main_content {
-    height: 100px;
-    background-color: $secondary;
-    color: $lighter;
-}
-
-.shop {
-    background-color: $primary;
-}
+@use './partials/main' as *;
+@use './partials/shop' as *;

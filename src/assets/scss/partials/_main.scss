@@ -1,0 +1,7 @@
+@use './common' as *;
+
+.main_content {
+    height: 100px;
+    background-color: $secondary;
+    color: $lighter;
+}

@@ -1,5 +1,24 @@
-@use './common' as *;
+@use "./common" as *;
 
 .shop {
-    background-color: $primary;
+  background-color: $primary;
+  padding: 3rem 3rem;
+  .shop_container {
+    justify-content: space-between;
+  }
+  .shop_option {
+    align-items: center;
+    img {
+      height: 40px;
+    }
+    &:last-child img {
+        height: 30px;
+    }
+    span {
+      color: $lighter;
+      font-size: 0.65rem;
+      font-weight: 300;
+      padding-left: 0.5rem
+    }
+  }
 }

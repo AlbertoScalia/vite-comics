@@ -53,23 +53,23 @@ export default {
     socials: [
         {
             name: 'Facebook',
-            img: 'public/img/footer-facebook.png', 
+            img: '/img/footer-facebook.png', 
         },
         {
             name: 'Twitter',
-            img: 'public/img/footer-twitter.png', 
+            img: '/img/footer-twitter.png', 
         },
         {
             name: 'YouTube',
-            img: 'public/img/footer-youtube.png', 
+            img: '/img/footer-youtube.png', 
         },
         {
             name: 'Pinterest',
-            img: 'public/img/footer-pinterest.png', 
+            img: '/img/footer-pinterest.png', 
         },
         {
             name: 'Periscope',
-            img: 'public/img/footer-periscope.png', 
+            img: '/img/footer-periscope.png', 
         }
     ]
     }
@@ -108,7 +108,7 @@ export default {
             <ul class="list-unstyled d-flex mb-0">
                 <li v-for="social in socials">
                     <a href="#">
-                        <img :src="'/' + social.img" :alt="social.name">
+                        <img :src="social.img" :alt="social.name">
                     </a>
                 </li>
             </ul>

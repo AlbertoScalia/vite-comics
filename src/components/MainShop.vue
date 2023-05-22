@@ -34,7 +34,7 @@ export default {
   <div class="shop">
     <div class="shop_container">
       <div class="shop_option d-flex" v-for="product in products">
-        <img :src="'../../public/img/' + product.img" :alt="product.name" />
+        <img :src="'/img/' + product.img" :alt="product.name" />
         <span>{{product.name.toUpperCase()}}</span>
       </div>
     </div>

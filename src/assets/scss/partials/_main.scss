@@ -1,7 +1,13 @@
 @use './common' as *;
 
+.jumbotron {
+    height: 320px;
+    background-image: url('/img/jumbotron.jpg');
+    background-size: cover;
+}
+
 .main_content {
-    height: 100px;
     background-color: $secondary;
     color: $lighter;
 }
+

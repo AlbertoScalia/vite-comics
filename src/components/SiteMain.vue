@@ -1,17 +1,15 @@
 <script>
 import MainShop from "./MainShop.vue";
-import ComicsCard from "./ComicsCard.vue";
-import comics from "../data/dc-comics.json"
+import MainComics from "./MainComics.vue"
 
 export default {
   name: "SiteMain",
   components: {
     MainShop,
-    ComicsCard
+    MainComics
   },
   data() {
     return {
-      comics: comics
     }
   }
 };
@@ -19,9 +17,7 @@ export default {
 
 <template>
   <div class="jumbotron"></div>
-  <div class="main_content">
-    <ComicsCard />
-  </div>
+  <MainComics />
   <MainShop />
 </template>
 

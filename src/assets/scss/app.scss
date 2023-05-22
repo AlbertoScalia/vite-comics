@@ -1,5 +1,7 @@
 @use './partials/_common' as *;
 @use './partials/header' as *;
 @use './partials/main' as *;
+@use './partials/comics' as *;
 @use './partials/shop' as *;
 @use './partials/footer' as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss' as *;

@@ -1,29 +1,29 @@
-@use './common' as *;
+@use "./common" as *;
 
 .header_container {
+  background-color: $lighter;
+  font-family: "Roboto Condensed", sans-serif;
+  nav {
     justify-content: space-between;
-    background-color: $lighter;
-    font-family: 'Roboto Condensed', sans-serif;
-    display: flex;
+    .logo {
+      padding: 0.5rem 0;
+      img {
+        height: 70px;
+      }
+    }
+    li {
+      font-size: 0.7rem;
+      font-weight: 700;
+      align-items: center;
+      display: flex;
+      padding: 0 0.6rem;
+      &.active {
+        border-bottom: 2px solid $primary;
+        a {
+          color: $primary;
+          margin-bottom: -2px;
+        }
+      }
+    }
+  }
 }
-
-.logo {
-    padding: 0.5rem 0;
-    img {
-      height: 70px;
-    }
-  }
-  li {
-    font-size: 0.7rem;
-    font-weight: 700;
-    align-items: center;
-    display: flex;
-    padding: 0 0.6rem;
-    &.active {
-    border-bottom: 2px solid $primary;
-    a {
-      color: $primary;
-      margin-bottom: -2px;
-    }
-  }
-  }

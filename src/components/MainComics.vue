@@ -27,7 +27,7 @@ export default {
           :title="comic.series"
         />
       </div>
-      <button type="button" class="btn btn-primary rounded-0 d-block">LOAD MORE</button>
+      <button type="button" class="btn btn-primary rounded-0 d-block px-5">LOAD MORE</button>
     </div>
   </div>
 </template>
